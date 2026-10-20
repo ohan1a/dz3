@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 #include <locale.h>
 int main()
 {
@@ -6,7 +7,7 @@ int main()
 	float fr;
 	float c = 299792458.0;
 	printf("Введите частоту сигнала (в ГГц):");
-	scanf_s("%f", &fr);
+	scanf("%f", &fr);
 	float l = c / (fr * 1000000000.0);
 	float lm = l * 1000.0;
 	printf("Длина волны равна: %.2f мм", lm);
